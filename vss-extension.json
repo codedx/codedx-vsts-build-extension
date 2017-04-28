@@ -1,0 +1,62 @@
+{
+	"manifestVersion": 1,
+	"id": "codedx-vsts-build-extension",
+	"version": "0.1.17",
+	"name": "Code Dx - Run Analysis",
+	"description": "Upload files to your Code Dx server to run an analysis",
+	"publisher": "CodeDx",
+	"targets": [
+		{
+			"id": "Microsoft.VisualStudio.Services"
+		}
+	],
+	"icons": {
+		"default": "images/dxLogo.png"
+	},
+	"categories": [
+		"Build and release"
+	],
+	"tags" : [
+		"Quality",
+		"Security",
+		"Static Code Analysis"
+	],
+	"content": {
+        "details": {
+            "path": "readme.md"
+        },
+        "license": {
+            "path": "eula.md"
+        }
+    },
+	"contributions": [
+		{
+			"id": "codedx.upload",
+			"type": "ms.vss-distributed-task.task",
+			"description": "Upload files to your Code Dx site",
+			"targets": [
+				"ms.vss-distributed-task.tasks"
+			],
+			"properties": {
+				"name": "scripts"
+			}
+		}
+	],
+	"scopes": [
+		"vso.build_execute"
+	],
+	"files": [
+		{
+			"path": "scripts",
+			"addressable": true
+		},
+		{
+			"path": "sdk/scripts",
+			"addressable": true
+		},
+		{
+			"path": "images/logo.png",
+			"addressable": true
+		}
+	]
+}
