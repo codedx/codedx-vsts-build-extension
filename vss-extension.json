@@ -1,10 +1,11 @@
 {
 	"manifestVersion": 1,
 	"id": "codedx-vsts-build-extension",
-	"version": "0.1.17",
+	"version": "0.1.18",
 	"name": "Code Dx - Run Analysis",
 	"description": "Upload files to your Code Dx server to run an analysis",
 	"publisher": "CodeDx",
+	"public": true,
 	"targets": [
 		{
 			"id": "Microsoft.VisualStudio.Services"
